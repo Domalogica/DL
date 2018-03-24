@@ -7,7 +7,7 @@
  *	http://www.gnu.org/licenses/gpl.html
  */
 
-;(function ($, w) {
+;$(".del").on('click', (function ($, w) {
 	"use strict";
 
 	var methods = (function () {
