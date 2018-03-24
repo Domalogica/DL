@@ -16,4 +16,4 @@ def main():
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
-    app.run(host='http://domalogica.com', port=80)
+    app.run(host='194.67.204.153', port=80)
