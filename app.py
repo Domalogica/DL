@@ -8,10 +8,11 @@ import requests, os
 app = Flask(__name__)
 app._static_folder = os.path.abspath("static/")
 
-
 @app.route('/')
 def main():
     return render_template('index.html')
+
+
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
