@@ -13,7 +13,6 @@ app._static_folder = os.path.abspath("static/")
 def main():
     return render_template('index.html')
 
-
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
