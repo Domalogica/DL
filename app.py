@@ -24,8 +24,6 @@ def vacancies_msg():
 @app.route('/vacancies_msg', methods=['POST','GET'])
 def sendMessage():
     _1 = request.form['_1']
-    
-	print(_1)
     _2 = request.form['_2']
     _3 = request.form['_3']
     _4 = request.form['_4']
